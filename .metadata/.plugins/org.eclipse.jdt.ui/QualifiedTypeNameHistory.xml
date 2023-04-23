@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="javax.persistence.ManyToMany"/>
+    <fullyQualifiedTypeName name="javax.persistence.JoinTable"/>
+    <fullyQualifiedTypeName name="java.time.LocalDate"/>
+    <fullyQualifiedTypeName name="javax.persistence.Entity"/>
+    <fullyQualifiedTypeName name="javax.persistence.Table"/>
+    <fullyQualifiedTypeName name="com.latam.alura.tienda.modelo.Producto"/>
+    <fullyQualifiedTypeName name="javax.persistence.ManyToOne"/>
+    <fullyQualifiedTypeName name="javax.persistence.OneToMany"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="com.latam.alura.tienda.modelo.Cliente"/>
+    <fullyQualifiedTypeName name="com.latam.alura.tienda.modelo.Pedido"/>
+    <fullyQualifiedTypeName name="com.latam.alura.tienda.modelo.ItemsPedido"/>
+    <fullyQualifiedTypeName name="com.latam.alura.tienda.dao.ProductoDao"/>
+    <fullyQualifiedTypeName name="javax.persistence.EntityManager"/>
+    <fullyQualifiedTypeName name="com.latam.alura.tienda.utils.JPAUtils"/>
+    <fullyQualifiedTypeName name="com.latam.alura.tienda.dao.PedidoDao"/>
+    <fullyQualifiedTypeName name="com.latam.alura.tienda.dao.ClienteDao"/>
+    <fullyQualifiedTypeName name="javax.persistence.CascadeType"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="java.math.BigDecimal"/>
+</qualifiedTypeNameHistroy>
