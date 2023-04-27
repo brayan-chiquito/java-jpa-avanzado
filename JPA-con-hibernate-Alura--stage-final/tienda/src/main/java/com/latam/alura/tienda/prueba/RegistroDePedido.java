@@ -2,6 +2,7 @@ package com.latam.alura.tienda.prueba;
 
 import java.io.FileNotFoundException;
 import java.math.BigDecimal;
+import java.util.List;
 
 import javax.persistence.EntityManager;
 
@@ -15,6 +16,7 @@ import com.latam.alura.tienda.modelo.ItemsPedido;
 import com.latam.alura.tienda.modelo.Pedido;
 import com.latam.alura.tienda.modelo.Producto;
 import com.latam.alura.tienda.utils.JPAUtils;
+import com.latam.alura.tienda.vo.RelatorioDeVenta;
 
 public class RegistroDePedido {
 
@@ -38,6 +40,9 @@ public class RegistroDePedido {
 	    
 	    BigDecimal valorTotal = pedidoDao.valorTotalVendido();
 	    System.out.println("Valor total: " + valorTotal);
+	    List<RelatorioDeVenta> relatorio = pedidoDao.relatorioDeVentasVO();
+	    
+	    relatorio.forEach(System.out::println);
 		
 	    em.close();
 	}

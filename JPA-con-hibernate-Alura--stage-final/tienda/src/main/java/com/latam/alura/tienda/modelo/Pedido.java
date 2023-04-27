@@ -7,6 +7,7 @@ import java.util.List;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -26,7 +27,7 @@ public class Pedido {
 	private LocalDate fecha = LocalDate.now();
 	private BigDecimal valorTotal = new BigDecimal(0);
 	
-	@ManyToOne
+	@ManyToOne(fetch = FetchType.LAZY) //se cargan solo si son nesesarios ya que los manytoone son tipo iger osea que trae todo los elemntos los manytomany por defecto son lazy
 	private Cliente cliente;
 //	se hace la coneccion con la tabla items pedidos ya qye se creaba otra tabla
 //	con la misma funcion pero sin los atributos
@@ -48,6 +49,14 @@ public class Pedido {
 		item.setPedido(this);
 		this.items.add(item);
 		this.valorTotal = this.valorTotal.add(item.getValor());
+	}
+
+	public List<ItemsPedido> getItems() {
+		return items;
+	}
+
+	public void setItems(List<ItemsPedido> items) {
+		this.items = items;
 	}
 
 	public Long getId() {

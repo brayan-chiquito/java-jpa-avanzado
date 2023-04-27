@@ -90,7 +90,7 @@ public class LoadRecords {
 	}
 	
 	private static List<String> readFile(String type) throws FileNotFoundException {
-		File file = new File("C:\\Users\\Public\\Alura\\jpa\\"+type+".txt");
+		File file = new File("D:\\alura\\base-de-datos\\"+type+".txt");
 		Scanner scan = new Scanner(file);
 		List<String> pedido= new ArrayList<>();
 		while(scan.hasNextLine()){
